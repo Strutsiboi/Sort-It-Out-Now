@@ -15,7 +15,7 @@ public class Trashcan : MonoBehaviour
     }
 
 
-    void Update()
+   /* void Update()
     {
 
 
@@ -36,5 +36,5 @@ public class Trashcan : MonoBehaviour
         {//Creates the gizmo that he uses when he physicaly attacks. Mattias. 
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(hitbox.position, lineOfSite); //Skapar en cirkel runt om enemyn. Melker
-        }
+        }*/
     }
