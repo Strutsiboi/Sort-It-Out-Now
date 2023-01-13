@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 1156501217}
   m_Layer: 0
   m_Name: Trash1
-  m_TagString: Trash
+  m_TagString: Plast
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -479,6 +479,7 @@ GameObject:
   - component: {fileID: 1522857708}
   - component: {fileID: 1522857707}
   - component: {fileID: 1522857706}
+  - component: {fileID: 1522857710}
   - component: {fileID: 1522857709}
   - component: {fileID: 1522857705}
   m_Layer: 0
@@ -613,3 +614,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1522857710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522857704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79f526baf04853438756424c8dac1f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToAttach: {fileID: 1156501216}
+  player: {fileID: 1522857704}

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Trash
   - Bin
+  - Plast
+  - Glas
   layers:
   - Default
   - TransparentFX
