@@ -17,21 +17,21 @@ public class Trashcan : MonoBehaviour
 
     void Update()
     {
-        
+
 
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(hitbox.position, lineOfSite, trashLayer);
         foreach (Collider2D player in hitEnemies)
         {
 
-            if (typeoftrash1 && typeoftrash2 && typeoftrash3 999899 trashinsight = false)
+            if (typeoftrash1 && typeoftrash2 && typeoftrash3  trashinsight = false)
             {
                 trashinsight = true;
                 //Give point to player.
                 trashinsight = false;
             }
         }
-
+    }
         public void OnDrawGizmosSelected()
         {//Creates the gizmo that he uses when he physicaly attacks. Mattias. 
             Gizmos.color = Color.green;
