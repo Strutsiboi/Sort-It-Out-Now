@@ -6,19 +6,21 @@ public class Belt : MonoBehaviour
 {
     public float speedcountdown = 15;
     public float speedtime;
-    public float speed;
+    public static float speed;
     void Start()
     {
-        speed = 1;
+        speed = 0.5f;
     }
 
     
     void Update()
     {
+        transform.position += new Vector3(speed,0,0) * Time.deltaTime;
         speedtime += Time.deltaTime; 
         if (speedtime >= speedcountdown)
         {
-            speed += 1;
+            speed += 0.2f;
+            speedtime = 0;
         }
     }
 }
