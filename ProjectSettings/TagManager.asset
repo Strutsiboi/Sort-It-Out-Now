@@ -8,6 +8,11 @@ TagManager:
   - Bin
   - Plast
   - Glas
+  - Metall
+  - Kartong
+  - Bin2
+  - Bin3
+  - Bin4
   layers:
   - Default
   - TransparentFX
