@@ -33,11 +33,8 @@ public class Skoj : MonoBehaviour
         }
         else if (binIndex != -1 && attached[binIndex])
         {
-            objectToAttach[binIndex].SetActive(false);
-            objectToAttach.RemoveAt(binIndex);
-            attached[binIndex] = false;
-            print("SLÄNG");
-            //objectToAttach[binIndex].SetActive(false);
+            Destroy(gameObject);
+            //Destroy(objectToAttach[binIndex]);
             //attached[binIndex] = false;
             //print("SLÄNG");
         }

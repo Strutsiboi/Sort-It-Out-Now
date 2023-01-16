@@ -1134,9 +1134,9 @@ GameObject:
   - component: {fileID: 1522857708}
   - component: {fileID: 1522857707}
   - component: {fileID: 1522857706}
-  - component: {fileID: 1522857710}
   - component: {fileID: 1522857709}
   - component: {fileID: 1522857705}
+  - component: {fileID: 1522857710}
   m_Layer: 0
   m_Name: Square
   m_TagString: Player
@@ -1202,7 +1202,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3cec27e3b90780643b7eb2dba772637c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
