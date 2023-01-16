@@ -6,10 +6,10 @@ public class Belt : MonoBehaviour
 {
     public float speedcountdown = 15;
     public float speedtime;
-    public static float speed;
+    public static float speed = 0.5f;
     void Start()
     {
-        speed = 0.5f;
+     
     }
 
     
