@@ -1,11 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RandomItemGeneration : MonoBehaviour
 {
     public Transform SpawnPoint;
-    public GameObject TrashPrefab;
+    public GameObject Trash1Prefab;
+    public GameObject Trash2Prefab;
+    public GameObject Trash3Prefab;
+    public GameObject Trash4Prefab;
 
     public float countdown = 7;
     public float timer;
@@ -20,10 +21,26 @@ public class RandomItemGeneration : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= countdown)
         {
-             Instantiate(TrashPrefab, SpawnPoint.position, SpawnPoint.rotation);
+            int random = Random.Range(0, 3);
+            if (random == 0)
+            {
+                Instantiate(Trash1Prefab, SpawnPoint.position, SpawnPoint.rotation);
+            }
+            else if (random == 1)
+            {
+                Instantiate(Trash2Prefab, SpawnPoint.position, SpawnPoint.rotation);
+            }
+            else if (random == 2)
+            {
+                Instantiate(Trash3Prefab, SpawnPoint.position, SpawnPoint.rotation);
+            }
+            else if (random == 3) 
+            {
+                Instantiate(Trash4Prefab, SpawnPoint.position, SpawnPoint.rotation);
+            }
             timer = 0;
         }
-       
+
     }
 
 }
