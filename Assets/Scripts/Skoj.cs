@@ -33,7 +33,7 @@ public class Skoj : MonoBehaviour
         }
         else if (binIndex != -1 && attached[binIndex])
         {
-            Destroy(gameObject);
+            Destroy(gameObject.transform.GetChild(0).gameObject);
             //Destroy(objectToAttach[binIndex]);
             //attached[binIndex] = false;
             //print("SLÄNG");
