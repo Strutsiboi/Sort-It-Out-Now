@@ -19,7 +19,7 @@ public class Belt : MonoBehaviour
         speedtime += Time.deltaTime; 
         if (speedtime >= speedcountdown)
         {
-            speed += 0.2f;
+            speed += 0.1f;
             speedtime = 0;
         }
     }
