@@ -9,7 +9,7 @@ public class Belt : MonoBehaviour
     public static float speed = 0.5f;
 
     public bool StopIt = false;
-
+    public bool HurryUp = false;
    
 
     void Update()
@@ -19,6 +19,13 @@ public class Belt : MonoBehaviour
             speed = speed / 2;
             StopIt = false;
             print("Stop");
+        }
+
+        if (HurryUp)
+        {
+            speed = speed + 2;
+            HurryUp = false;
+            print("Hurry");
         }
 
         transform.position += new Vector3(speed,0,0) * Time.deltaTime;
