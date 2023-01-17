@@ -21,22 +21,17 @@ public class Skoj : MonoBehaviour
         int wasteIndex = wasteTags.IndexOf(collision.gameObject.tag);
         int binIndex = binTags.IndexOf(collision.gameObject.tag);
 
-        if (wasteIndex != -1 && !attached[wasteIndex]) //När vi kolliderara med waste tag
+        if (collision.gameObject.tag == "Plast" || collision.gameObject.tag == "Metall" || collision.gameObject.tag == "Glas" || collision.gameObject.tag == "Kartong")
         {
             objectToAttach.Add(collision.gameObject);
             collision.gameObject.transform.parent = player.transform;
-            //objectToAttach[wasteIndex].transform.parent = player.transform;
             collision.gameObject.transform.position = player.transform.position;
-            //objectToAttach[wasteIndex].transform.position = player.transform.position;
             attached[wasteIndex] = true;
-            print("TAR UPP SOPOR");
         }
-        else if (binIndex != -1 && attached[binIndex])
+
+        if (binIndex != -1 && attached[binIndex] && transform.childCount > 0)
         {
             Destroy(gameObject.transform.GetChild(0).gameObject);
-            //Destroy(objectToAttach[binIndex]);
-            //attached[binIndex] = false;
-            //print("SLÄNG");
         }
     }
 }
