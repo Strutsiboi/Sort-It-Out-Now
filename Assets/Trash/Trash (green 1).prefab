@@ -123,3 +123,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedcountdown: 15
   speedtime: 0
+  StopIt: 0
