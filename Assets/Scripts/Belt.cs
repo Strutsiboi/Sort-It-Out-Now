@@ -10,8 +10,11 @@ public class Belt : MonoBehaviour
 
     public bool StopIt = false;
     public bool HurryUp = false;
-   
 
+    private void Awake()
+    {
+        
+    }
     void Update()
     {
         if (StopIt)
