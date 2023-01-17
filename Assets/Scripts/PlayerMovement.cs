@@ -5,6 +5,8 @@ using UnityEngine;
 //MelkerJ
 public class PlayerMovement : MonoBehaviour
 {
+    public Animator animator;
+
     public float baseSpeed = 5f;
     public float moveSpeed = 5f;
 
@@ -16,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        animator.SetFloat("Speed", Mathf.Abs(baseSpeed));
+
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
