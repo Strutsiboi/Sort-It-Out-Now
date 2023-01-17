@@ -7,20 +7,30 @@ public class Belt : MonoBehaviour
     public float speedcountdown = 15;
     public float speedtime;
     public static float speed = 0.5f;
-    void Start()
-    {
-     
-    }
 
-    
+    public bool StopIt = false;
+
+   
+
     void Update()
     {
+        if (StopIt)
+        {
+            speed = speed / 2;
+            StopIt = false;
+            print("Stop");
+        }
+
         transform.position += new Vector3(speed,0,0) * Time.deltaTime;
         speedtime += Time.deltaTime; 
+
         if (speedtime >= speedcountdown)
         {
             speed += 0.1f;
             speedtime = 0;
-        }
+        } 
+       
     }
+
+        
 }
