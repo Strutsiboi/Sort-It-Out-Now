@@ -11,6 +11,7 @@ public class Skoj  : MonoBehaviour
     public List<string> binTags;
     public List<bool> attached;
 
+    Belt[] trash;
     public void Start()
     {
         attached = new List<bool>(new bool[objectToAttach.Count]);
@@ -34,5 +35,14 @@ public class Skoj  : MonoBehaviour
             Destroy(gameObject.transform.GetChild(0).gameObject);
             ScoreManager.instance.AddPoint(); //Lägga till poäng till scoreboarden
         }
+
+     /*   if (collision.gameObject.tag == "Plast" || collision.gameObject.tag == "Metall" || collision.gameObject.tag == "Glas" || collision.gameObject.tag == "Kartong")
+        {
+            trash = FindObjectsOfType<Belt>();
+            foreach (Belt item in trash)
+            {
+                item.Holdit = true;
+            }
+        }*/
     }
 }

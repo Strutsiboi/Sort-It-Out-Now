@@ -40,10 +40,12 @@ public class Health : MonoBehaviour
             {
                 hearts[i].enabled = false;
             }
-            
-        
-        } 
-        
+            void OnCollisionEnter2D(Collision2D collision)
+            {
+                hearts[i].sprite = emptyHeart;
+            }
+        }
 
+        
     }
 }
