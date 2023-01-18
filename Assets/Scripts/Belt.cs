@@ -31,7 +31,7 @@ public class Belt : MonoBehaviour
 
     public bool StopIt = false;
     public bool HurryUp = false;
-
+    public bool Holdit = false;
     private void Start()
     {
   
@@ -50,6 +50,12 @@ public class Belt : MonoBehaviour
             speed = speed + 2;
             HurryUp = false;
             print("Hurry");
+        }
+
+        if (Holdit)
+        {
+            new Vector3(0, 0, 0);
+            print("Holdit");
         }
 
         transform.position += direction * speed * Time.deltaTime;
