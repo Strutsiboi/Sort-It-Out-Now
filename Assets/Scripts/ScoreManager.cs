@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+//Mikhael
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;

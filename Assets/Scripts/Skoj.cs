@@ -32,6 +32,7 @@ public class Skoj  : MonoBehaviour
         if (binIndex != -1 && attached[binIndex] && transform.childCount > 0)
         {
             Destroy(gameObject.transform.GetChild(0).gameObject);
+            ScoreManager.instance.AddPoint(); //Lägga till poäng till scoreboarden
         }
     }
 }
