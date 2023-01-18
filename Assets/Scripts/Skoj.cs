@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Skoj : MonoBehaviour
+public class Skoj  : MonoBehaviour
 {
     public GameObject player;
     public List<GameObject> objectToAttach;
     public List<string> wasteTags;
     public List<string> binTags;
-    private List<bool> attached;
+    public List<bool> attached;
 
-    private void Start()
+    public void Start()
     {
         attached = new List<bool>(new bool[objectToAttach.Count]);
     }
