@@ -13,7 +13,7 @@ public class Slowdownalready : MonoBehaviour
 
     private void Awake()
     {
-       // Destroy(gameObject, 10f);
+       Destroy(gameObject, 10f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

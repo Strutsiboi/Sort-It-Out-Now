@@ -10,12 +10,13 @@ public class RandomItemGeneration : MonoBehaviour
 
     public float countdown = 7;
     public float timer;
+    public Vector3 direction;
     void Start()
     {
 
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         timer += Time.deltaTime;
@@ -24,19 +25,23 @@ public class RandomItemGeneration : MonoBehaviour
             int random = Random.Range(0, 3);
             if (random == 0)
             {
-                Instantiate(Trash1Prefab, SpawnPoint.position, SpawnPoint.rotation);
+                Belt newItem = Instantiate(Trash1Prefab, SpawnPoint.position, SpawnPoint.rotation).GetComponent<Belt>();
+                newItem.direction = direction;
             }
             else if (random == 1)
             {
-                Instantiate(Trash2Prefab, SpawnPoint.position, SpawnPoint.rotation);
+                Belt newItem = Instantiate(Trash2Prefab, SpawnPoint.position, SpawnPoint.rotation).GetComponent<Belt>();
+                newItem.direction = direction;
             }
             else if (random == 2)
             {
-                Instantiate(Trash3Prefab, SpawnPoint.position, SpawnPoint.rotation);
+                Belt newItem = Instantiate(Trash3Prefab, SpawnPoint.position, SpawnPoint.rotation).GetComponent<Belt>();
+                newItem.direction = direction;
             }
             else if (random == 3) 
             {
-                Instantiate(Trash4Prefab, SpawnPoint.position, SpawnPoint.rotation);
+                Belt newItem = Instantiate(Trash4Prefab, SpawnPoint.position, SpawnPoint.rotation).GetComponent<Belt>();
+                newItem.direction = direction;
             }
             timer = 0;
         }
