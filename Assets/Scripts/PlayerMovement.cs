@@ -18,11 +18,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        animator.SetFloat("Speed", Mathf.Abs(baseSpeed));
+        
 
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
+        animator.SetFloat("Speed.x", movement.x);
+        animator.SetFloat("Speed.y", movement.y);
         movement = movement.normalized * moveSpeed * Time.deltaTime;
 
         transform.position = new Vector2(transform.position.x + movement.x,transform.position.y + movement.y);
