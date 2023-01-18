@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Health : MonoBehaviour
+public class Health : Skoj
 {
     public int health;
     public int numOfHearts;
@@ -40,6 +40,12 @@ public class Health : MonoBehaviour
             {
                 hearts[i].enabled = false;
             }
+
+            if (binIndex != -1 && attached[binIndex] && transform.childCount > 0)
+            {
+                Destroy(gameObject.transform.GetChild(0).gameObject);
+            }
+
         } 
         
 
