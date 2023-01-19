@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PowerupCreator : MonoBehaviour
 {
-    public Transform SpawnPoint;
+   
     public GameObject SpeedPrefab;
     public GameObject PluslePrefab;
     public GameObject MinunPrefab;
+
+    [SerializeField]
+    GameObject[] points;
 
     public float countdown = 10;
     public float timer;
@@ -26,15 +29,15 @@ public class PowerupCreator : MonoBehaviour
             int random = Random.Range(0, 3);
             if (random == 0)
             {
-               Instantiate(SpeedPrefab, SpawnPoint.position, SpawnPoint.rotation);
+               Instantiate(SpeedPrefab, points[Random.Range(0,points.Length)].transform.position, points[Random.Range(0, points.Length)].transform.rotation);
             }
             else if (random == 1)
             {
-                Instantiate(PluslePrefab, SpawnPoint.position, SpawnPoint.rotation);
+                Instantiate(PluslePrefab, points[Random.Range(0, points.Length)].transform.position, points[Random.Range(0, points.Length)].transform.rotation);
             }
             else if (random == 2)
             {
-                Instantiate(MinunPrefab, SpawnPoint.position, SpawnPoint.rotation);
+                Instantiate(MinunPrefab, points[Random.Range(0, points.Length)].transform.position, points[Random.Range(0, points.Length)].transform.rotation);
             }
             timer = 0;
         }
