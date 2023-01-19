@@ -35,14 +35,5 @@ public class Skoj  : MonoBehaviour
             Destroy(gameObject.transform.GetChild(0).gameObject);
             ScoreManager.instance.AddPoint(); //Lägga till poäng till scoreboarden
         }
-
-     /*   if (collision.gameObject.tag == "Plast" || collision.gameObject.tag == "Metall" || collision.gameObject.tag == "Glas" || collision.gameObject.tag == "Kartong")
-        {
-            trash = FindObjectsOfType<Belt>();
-            foreach (Belt item in trash)
-            {
-                item.Holdit = true;
-            }
-        }*/
     }
 }
