@@ -8,9 +8,11 @@ public class Health : MonoBehaviour
     public int health;
     public int numOfHearts;
 
+
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+
 
     void Update()
     {
@@ -51,6 +53,8 @@ public class Health : MonoBehaviour
     {
         if (collision.gameObject.tag == "Plast" || collision.gameObject.tag == "Metall" || collision.gameObject.tag == "Glas" || collision.gameObject.tag == "Kartong")
         {
+           
+
             for (int i = 0; i < hearts.Length; i++) //forloop
             {
                 if (i < health)

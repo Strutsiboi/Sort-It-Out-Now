@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3843219370916070376}
   - component: {fileID: 3843219370916070380}
   - component: {fileID: 3843219370916070379}
+  - component: {fileID: 8344229124773857118}
   - component: {fileID: 3843219370916070378}
   m_Layer: 0
   m_Name: Strutsmcgnogget
@@ -181,6 +182,28 @@ MonoBehaviour:
   - Bin3
   - Bin4
   attached: 
+--- !u!114 &8344229124773857118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3843219370916070381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c157ca97d0c7df46b26fd310fe8052d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  numOfHearts: 5
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullHeart: {fileID: 0}
+  emptyHeart: {fileID: 0}
 --- !u!95 &3843219370916070378
 Animator:
   serializedVersion: 3
