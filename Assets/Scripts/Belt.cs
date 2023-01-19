@@ -12,7 +12,9 @@ public class Belt : MonoBehaviour
     public float speedtime;
     static float local_speed = 0.5f;
     public Vector3 direction;
-
+    
+   // public GameObject objecty;
+  //  public string script;// your secound script name
     public static float speed
     {
         get
@@ -34,10 +36,15 @@ public class Belt : MonoBehaviour
     public bool Holdit = false;
     private void Start()
     {
-  
+     //   (objecty.GetComponent(script) as MonoBehaviour).enabled = false;
     }
     void Update()
     {
+        if (transform.parent != null)
+        {
+            this.enabled = false;
+        }
+
         if (StopIt)
         {
             speed = speed / 2;
@@ -68,9 +75,15 @@ public class Belt : MonoBehaviour
         }
 
     }
+
+       
+    
+    
+
 }
 
-        
+        // stäng av belt scriptet när man blir en child av spelaren. 
+        // Gör så att powerup creatorn väljer ut en spawn point.
     
     // Göra så att en prefab randomly väljer att använda en ut av 2 sprites.
 
