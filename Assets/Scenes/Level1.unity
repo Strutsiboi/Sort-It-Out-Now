@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 12644011}
   - component: {fileID: 12644010}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: Bin3
   m_TagString: Bin3
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -248,11 +248,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12644009}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.24, y: 3.81, z: 0}
+  m_LocalPosition: {x: 2.24, y: 3.69, z: 0}
   m_LocalScale: {x: 2.2589822, y: 2.2589822, z: 1.5059881}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &220775102
 GameObject:
@@ -1587,7 +1587,7 @@ GameObject:
   - component: {fileID: 903649224}
   - component: {fileID: 903649223}
   m_Layer: 0
-  m_Name: Sphere (3)
+  m_Name: Bin1
   m_TagString: Bin
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1699,11 +1699,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903649222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.5, y: 3.81, z: 0}
+  m_LocalPosition: {x: -6.5, y: 3.69, z: 0}
   m_LocalScale: {x: 2.2589822, y: 2.2589822, z: 1.5059881}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1043566855
 GameObject:
@@ -2121,7 +2121,7 @@ GameObject:
   - component: {fileID: 1275437309}
   - component: {fileID: 1275437308}
   m_Layer: 0
-  m_Name: Sphere (2)
+  m_Name: Bin4
   m_TagString: Bin4
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2233,11 +2233,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275437307}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.38, y: 3.81, z: 0}
+  m_LocalPosition: {x: 6.38, y: 3.69, z: 0}
   m_LocalScale: {x: 2.2589822, y: 2.2589822, z: 1.5059881}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1393159844
 GameObject:
@@ -2687,7 +2687,7 @@ GameObject:
   - component: {fileID: 1724218652}
   - component: {fileID: 1724218651}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Bin2
   m_TagString: Bin2
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2799,11 +2799,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724218650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.29, y: 3.81, z: 0}
+  m_LocalPosition: {x: -2.29, y: 3.69, z: 0}
   m_LocalScale: {x: 2.2589822, y: 2.2589822, z: 1.5059881}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1750044973
 PrefabInstance:
