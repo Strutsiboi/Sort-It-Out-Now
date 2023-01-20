@@ -42,9 +42,7 @@ public class Health : MonoBehaviour
             else
             {
                 hearts[i].enabled = false;
-            }
-
-            
+            }   
         }
         
         if(health == 0)
