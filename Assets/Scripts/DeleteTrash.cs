@@ -10,7 +10,7 @@ public class DeleteTrash : MonoBehaviour
         if (collision.gameObject.tag == "VeryBadBin")
         {
             print("COLLIDAR MED OBJEKT");
-            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 }
