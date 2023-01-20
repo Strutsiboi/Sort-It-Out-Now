@@ -12,7 +12,7 @@ public class DeleteTrash : Health
             print("COLLIDAR MED OBJEKT");
             Destroy(gameObject);
 
-            for (int i = 0; i < hearts.Length; i++) //forloop
+            /*for (int i = 0; i < hearts.Length; i++) //forloop
             {
                 if (i < health)
                 {
@@ -31,8 +31,7 @@ public class DeleteTrash : Health
                 else
                 {
                     hearts[i].enabled = false;
-                }
-            }
+                }*/
         }
     }
 }
