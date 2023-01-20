@@ -14,6 +14,7 @@ TagManager:
   - Bin3
   - Bin4
   - BadTrashBin
+  - VeryBadBin
   layers:
   - Default
   - TransparentFX
