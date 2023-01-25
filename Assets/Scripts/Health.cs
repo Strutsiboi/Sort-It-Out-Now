@@ -35,14 +35,7 @@ public class Health : MonoBehaviour
                 hearts[i].sprite = emptyHeart; //ifall i är större än hjärtan, är de tomma
             }
 
-            if (i < numOfHearts)
-            {
-                hearts[i].enabled = true;
-            }
-            else
-            {
-                hearts[i].enabled = false;
-            }   
+              
         }
         
         if(health == 0)
