@@ -808,6 +808,7 @@ GameObject:
   - component: {fileID: 489127920}
   - component: {fileID: 489127922}
   - component: {fileID: 489127921}
+  - component: {fileID: 489127923}
   m_Layer: 5
   m_Name: Heart5
   m_TagString: Untagged
@@ -872,6 +873,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489127919}
   m_CullTransparentMesh: 1
+--- !u!95 &489127923
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489127919}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 007e09b6da77c9b44918bad85cc52acf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &601821522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1411,6 +1431,7 @@ GameObject:
   - component: {fileID: 1036362139}
   - component: {fileID: 1036362141}
   - component: {fileID: 1036362140}
+  - component: {fileID: 1036362142}
   m_Layer: 5
   m_Name: Heart2
   m_TagString: Untagged
@@ -1475,6 +1496,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036362138}
   m_CullTransparentMesh: 1
+--- !u!95 &1036362142
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036362138}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 007e09b6da77c9b44918bad85cc52acf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1076586622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,6 +1605,7 @@ GameObject:
   - component: {fileID: 1128222878}
   - component: {fileID: 1128222880}
   - component: {fileID: 1128222879}
+  - component: {fileID: 1128222881}
   m_Layer: 5
   m_Name: Heart4
   m_TagString: Untagged
@@ -1629,6 +1670,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128222877}
   m_CullTransparentMesh: 1
+--- !u!95 &1128222881
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128222877}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 007e09b6da77c9b44918bad85cc52acf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1143174217
 GameObject:
   m_ObjectHideFlags: 0
@@ -2163,6 +2223,7 @@ GameObject:
   - component: {fileID: 1498429661}
   - component: {fileID: 1498429663}
   - component: {fileID: 1498429662}
+  - component: {fileID: 1498429664}
   m_Layer: 5
   m_Name: Heart3
   m_TagString: Untagged
@@ -2227,6 +2288,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498429660}
   m_CullTransparentMesh: 1
+--- !u!95 &1498429664
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498429660}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 007e09b6da77c9b44918bad85cc52acf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1768154804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2323,6 +2403,7 @@ GameObject:
   - component: {fileID: 1835787940}
   - component: {fileID: 1835787942}
   - component: {fileID: 1835787941}
+  - component: {fileID: 1835787943}
   m_Layer: 5
   m_Name: Heart1
   m_TagString: Untagged
@@ -2387,6 +2468,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835787939}
   m_CullTransparentMesh: 1
+--- !u!95 &1835787943
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835787939}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 007e09b6da77c9b44918bad85cc52acf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1914493547
 GameObject:
   m_ObjectHideFlags: 0
