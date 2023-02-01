@@ -7,6 +7,7 @@ public class Skoj  : MonoBehaviour
 {
     public GameObject player;
     public List<GameObject> objectToAttach;
+    public int maxChild = 1; //This
     public List<string> wasteTags;
     public List<string> binTags;
     public List<bool> attached;
@@ -34,6 +35,17 @@ public class Skoj  : MonoBehaviour
         {
             Destroy(gameObject.transform.GetChild(0).gameObject);
             ScoreManager.instance.AddPoint(); //Lägga till poäng till scoreboarden
+        }
+    }
+
+    public void Update()
+    {
+        if (transform.childCount > maxChild)
+        {
+            for (int i = maxChild; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).SetParent(null);
+            }
         }
     }
 }
